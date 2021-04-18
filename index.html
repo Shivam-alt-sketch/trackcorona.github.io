@@ -116,7 +116,7 @@ img#flag{
 <div id="loading"></div>
 
 	<div class="container">
-		<h2>COVID cases in <span id="country"></span></h2><img id="flag"></h2>
+		<h2>COVID cases in India</h2>
 		<div class="board">
 			<div class="card a">
 				<i class="fa fa-tachometer"></i>
@@ -166,8 +166,6 @@ img#flag{
 		return response.json();
 	})
 	.then((data)=>{
-		document.getElementById("flag").src = data.countryInfo.flag;
-		document.getElementById("country").innerHTML = data.country.toLocaleString();
 		document.getElementById("activeCases").innerHTML = data.activeCases.toLocaleString();
 		document.getElementById("activeCasesNew").innerHTML = data.activeCasesNew.toLocaleString();
 		document.getElementById("death").innerHTML= data.deaths.toLocaleString();
