@@ -149,7 +149,7 @@ img#flag{
 		</div>
 		<div class="card t">
 				<i class="fa fa-eye"></i>
-				<h5>Total Tests Done</h5>
+				<h5>Previous Day Tests</h5>
 				<span id="previousDayTests"></span>
 			</div>
 		</div>
@@ -170,8 +170,8 @@ img#flag{
 		document.getElementById("activeCasesNew").innerHTML = data.activeCasesNew.toLocaleString();
 		document.getElementById("death").innerHTML= data.deaths.toLocaleString();
 		document.getElementById("recovered").innerHTML = data.recovered.toLocaleString();
-		document.getElementById("tests").innerHTML = data.previousDayTests.toLocaleString();
-		document.getElementById("cases").innerHTML = data.cases.toLocaleString();
-		document.getElementById("total").innerHTML = data.totalCases.toLocaleString();
+		document.getElementById("previousDayTests").innerHTML = data.previousDayTests.toLocaleString();
+		document.getElementById("totalCases").innerHTML = data.totalCases.toLocaleString();
+		
 	})
 </script>
